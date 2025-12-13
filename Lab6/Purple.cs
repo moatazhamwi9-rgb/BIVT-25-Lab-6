@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Formats.Asn1;
-using System.Linq;
+using System;
+using System.Security.Cryptography;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Lab6
 {
@@ -739,4 +738,5 @@ namespace Lab6
             func(array);
         }
     }
+
 }
