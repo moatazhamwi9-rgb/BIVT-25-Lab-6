@@ -616,7 +616,6 @@ namespace Lab6
 
             return res;
         }
-        public delegate int Predicate(int[][] array);
         public bool CheckTransformAbility(int[][] array)
         {
             if (array == null || array.Length == 0) return false;
