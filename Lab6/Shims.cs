@@ -1,6 +1,5 @@
 namespace Lab6
 {
-    public delegate void Sorting(int[] row);
 
     public class Finder { }
     public class SortRowsStyle { }
