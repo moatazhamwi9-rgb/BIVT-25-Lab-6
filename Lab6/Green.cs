@@ -129,19 +129,19 @@ namespace Lab6
 
         }
         public int Task8(double[] A, double[] B)
-        {
-            int answer = 0;
-
-            // code here
-            if (A == null || B == null || A.Length != 3 || B.Length != 3) return 0;
-            double a1 = GeronArea(A[0], A[1], A[2]);
-            double a2 = GeronArea(B[0], B[1], B[2]);
-            if (a1 == 0 && a2 == 0) answer = 0;
-            else answer = (a1 > a2) ? 1 : 2;
-            // end
-
-            return answer;
-        }
+                    {
+                        int answer = 0;
+                    
+                        // code here
+                        if (A == null || B == null || A.Length != 3 || B.Length != 3) return 0;
+                        double a1 = GeronArea(A[0], A[1], A[2]);
+                        double a2 = GeronArea(B[0], B[1], B[2]);
+                        if (a1 == 0 && a2 == 0) return 0;
+                        answer = (a1 >= a2) ? 1 : 2;  // tie -> 1
+                        // end
+                    
+                        return answer;
+                    }
         public void Task9(int[,] matrix, Action<int[]> sorter)
         {
 
@@ -376,3 +376,4 @@ namespace Lab6
         }
     }
 }
+
