@@ -1,0 +1,15 @@
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.AssemblyInfoInputs.cache
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.AssemblyInfo.cs
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.csproj.CoreCompileInputs.cache
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.sourcelink.json
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/bin/Debug/net8.0/Lab6
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/bin/Debug/net8.0/Lab6.deps.json
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/bin/Debug/net8.0/Lab6.runtimeconfig.json
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/bin/Debug/net8.0/Lab6.dll
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/bin/Debug/net8.0/Lab6.pdb
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.dll
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/refint/Lab6.dll
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.pdb
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/Lab6.genruntimeconfig.cache
+/Users/bogdus/Documents/projects/csProjects/BIVT-25-Lab-6/Lab6/obj/Debug/net8.0/ref/Lab6.dll
