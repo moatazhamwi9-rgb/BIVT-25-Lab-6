@@ -1,0 +1,15 @@
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.AssemblyInfoInputs.cache
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.AssemblyInfo.cs
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.csproj.CoreCompileInputs.cache
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.sourcelink.json
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\bin\Debug\net8.0\Lab6.exe
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\bin\Debug\net8.0\Lab6.deps.json
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\bin\Debug\net8.0\Lab6.runtimeconfig.json
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\bin\Debug\net8.0\Lab6.dll
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\bin\Debug\net8.0\Lab6.pdb
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.dll
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\refint\Lab6.dll
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.pdb
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\Lab6.genruntimeconfig.cache
+C:\Users\timap\фантом мисис\BIVT-25-Lab-6\Lab6\obj\Debug\net8.0\ref\Lab6.dll
