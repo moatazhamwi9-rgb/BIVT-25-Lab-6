@@ -5,7 +5,7 @@ namespace Lab6
 {
     public class White
     {
-        // Helper method for Task1
+       
         public int FindMaxIndex(double[] array)
         {
             int maxIndex = 0;
@@ -60,7 +60,7 @@ namespace Lab6
             // end
         }
 
-        // Helper method for Task2
+        
         public int FindMaxRowIndexInColumn(int[,] matrix, int col)
         {
             int maxRow = 0;
@@ -98,7 +98,7 @@ namespace Lab6
             // end
         }
 
-        // Helper method for Task3
+        
         public int[] GetNegativeCountPerRow(int[,] matrix)
         {
             int rows = matrix.GetLength(0);
@@ -141,7 +141,7 @@ namespace Lab6
             return answer;
         }
 
-        // Helper method for Task4 and Task5
+        
         public int FindMax(int[,] matrix, out int row, out int col)
         {
             row = 0;
@@ -176,7 +176,7 @@ namespace Lab6
             // end
         }
 
-        // Helper method for Task5
+        
         public void SwapColumns(int[,] A, int colIndexA, int[,] B, int colIndexB)
         {
             if (A.GetLength(0) != B.GetLength(0))
@@ -203,9 +203,7 @@ namespace Lab6
             // end
         }
 
-        // Delegate for Task6
-        public delegate void Sorting(int[,] matrix);
-
+        
         public void SortDiagonalAscending(int[,] matrix)
         {
             int n = matrix.GetLength(0);
@@ -254,7 +252,7 @@ namespace Lab6
             // end
         }
 
-        // Helper method for Task7
+        
         public long Factorial(int n)
         {
             if (n <= 1)
@@ -277,9 +275,7 @@ namespace Lab6
             return answer;
         }
 
-        // Delegate for Task8
-        public delegate double BikeRide(double v, double a);
-
+        
         public double GetDistance(double v, double a)
         {
             double distance = 0;
@@ -319,13 +315,13 @@ namespace Lab6
             return answer;
         }
 
-        // Helper methods for Task9
+        
         public double Sum(double[] array)
         {
             double sum = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                if (i % 2 == 0) // четные индексы (0, 2, 4...)
+                if (i % 2 == 0)
                 {
                     sum += array[i];
                 }
@@ -377,7 +373,7 @@ namespace Lab6
             double totalSum = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                if (i % 2 == 1) // нечетные индексы (1, 3, 5...)
+                if (i % 2 == 1)
                 {
                     double[] doubleArray = array[i].Select(x => (double)x).ToArray();
                     totalSum += Sum(doubleArray);
@@ -389,7 +385,7 @@ namespace Lab6
             return answer;
         }
 
-        // Helper methods for Task10
+        
         public int CountPositive(int[][] array)
         {
             int count = 0;
@@ -444,4 +440,7 @@ namespace Lab6
             return answer;
         }
     }
+
+    public delegate void Sorting(int[,] matrix);
+    public delegate double BikeRide(double v, double a);
 }
