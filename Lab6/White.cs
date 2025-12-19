@@ -378,7 +378,22 @@ namespace Lab6
         }
     }
     
-    // Delegate definitions
+    // ========== ALL DELEGATE DEFINITIONS ==========
+    
+    // Delegate for Task6
     public delegate void Sorting(int[,] matrix);
+    
+    // Delegate for Task8  
     public delegate double BikeRide(double v, double a);
+    
+    // Delegates used by Blue.cs
+    public delegate int Finder(int[,] matrix);
+    public delegate void SortRowsStyle(int[,] matrix);
+    public delegate void ReplaceMaxElements(int[,] matrix, int value);
+    public delegate int[,] GetTriangle(int[,] matrix);
+    
+    // Delegates used by Purple.cs
+    public delegate void SortRowsByMax(int[,] matrix);
+    public delegate int FindNegatives(int[,] matrix);
+    public delegate double MathInfo(int[,] matrix);
 }
