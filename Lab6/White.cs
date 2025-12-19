@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 
 namespace Lab6
 {
@@ -180,7 +179,41 @@ namespace Lab6
             return hours;
         }
 
-        // Helper for Task9
+        // Helper for Task9 - int[] version
+        public void SwapFromLeft(int[] array)
+        {
+            for (int i = 0; i < array.Length - 1; i += 2)
+            {
+                int temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+            }
+        }
+
+        public void SwapFromRight(int[] array)
+        {
+            for (int i = array.Length - 1; i > 0; i -= 2)
+            {
+                int temp = array[i];
+                array[i] = array[i - 1];
+                array[i - 1] = temp;
+            }
+        }
+
+        public int GetSum(int[] array)
+        {
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sum += array[i];
+                }
+            }
+            return sum;
+        }
+
+        // Helper for Task9 - double[] version (for completeness)
         public void SwapFromLeft(double[] array)
         {
             for (int i = 0; i < array.Length - 1; i += 2)
@@ -561,70 +594,32 @@ namespace Lab6
         {
             int answer = 0;
             
-            if (array.Length % 2 == 0)
-            {
-                // If number of arrays is even
-                for (int i = 0; i < array.Length; i++)
-                {
-                    double[] tempArray = new double[array[i].Length];
-                    for (int j = 0; j < array[i].Length; j++)
-                    {
-                        tempArray[j] = array[i][j];
-                    }
-                    
-                    // Swap from left
-                    for (int j = 0; j < tempArray.Length - 1; j += 2)
-                    {
-                        double temp = tempArray[j];
-                        tempArray[j] = tempArray[j + 1];
-                        tempArray[j + 1] = temp;
-                    }
-                }
-            }
-            else
-            {
-                // If number of arrays is odd
-                for (int i = 0; i < array.Length; i++)
-                {
-                    double[] tempArray = new double[array[i].Length];
-                    for (int j = 0; j < array[i].Length; j++)
-                    {
-                        tempArray[j] = array[i][j];
-                    }
-                    
-                    // Swap from right
-                    for (int j = tempArray.Length - 1; j > 0; j -= 2)
-                    {
-                        double temp = tempArray[j];
-                        tempArray[j] = tempArray[j - 1];
-                        tempArray[j - 1] = temp;
-                    }
-                }
-            }
-            
-            // Calculate sum
-            double totalSum = 0;
+            // Apply swapping to each subarray
             for (int i = 0; i < array.Length; i++)
             {
-                if (i % 2 == 1) // Odd positions
+                if (array[i].Length < 2) continue;
+                
+                if (array.Length % 2 == 0)
                 {
-                    double[] tempArray = new double[array[i].Length];
-                    for (int j = 0; j < array[i].Length; j++)
-                    {
-                        tempArray[j] = array[i][j];
-                    }
-                    
-                    for (int j = 0; j < tempArray.Length; j++)
-                    {
-                        if (j % 2 == 0) // Even positions
-                        {
-                            totalSum += tempArray[j];
-                        }
-                    }
+                    // Even number of arrays - swap from left
+                    SwapFromLeft(array[i]);
+                }
+                else
+                {
+                    // Odd number of arrays - swap from right
+                    SwapFromRight(array[i]);
                 }
             }
             
-            answer = (int)totalSum;
+            // Calculate sum of elements at even indices in odd-positioned arrays (1, 3, 5...)
+            for (int i = 1; i < array.Length; i += 2) // Start from 1 for odd positions
+            {
+                for (int j = 0; j < array[i].Length; j += 2) // Even indices (0, 2, 4...)
+                {
+                    answer += array[i][j];
+                }
+            }
+            
             return answer;
         }
 
@@ -639,11 +634,4 @@ namespace Lab6
     // ========== Delegate Definitions ==========
     public delegate void Sorting(int[,] matrix);
     public delegate double BikeRide(double v, double a);
-    public delegate int Finder(int[,] matrix);
-    public delegate void SortRowsStyle(int[,] matrix);
-    public delegate void ReplaceMaxElements(int[,] matrix, int value);
-    public delegate int[,] GetTriangle(int[,] matrix);
-    public delegate void SortRowsByMax(int[,] matrix);
-    public delegate int FindNegatives(int[,] matrix);
-    public delegate double MathInfo(int[,] matrix);
 }
